@@ -1,0 +1,33 @@
+main div{
+    display: flex;
+    justify-content: center;
+}
+
+main div img{
+    background-color: #fff;
+    width: 80px;
+    border-radius:100% ;
+    padding: 40px 40px;
+    margin: 20px 50px;
+}
+
+#jogador img{
+        border: 25px solid  red;
+        border-radius: 100%;
+       
+    }
+    
+#robo img{
+        border: 25px solid yellow;
+        border-radius: 100%;
+    }
+
+#mesagens{
+    display: flex;
+    justify-content: center;
+    color: yellow;
+    font-size: 30px;
+}
+
+
+

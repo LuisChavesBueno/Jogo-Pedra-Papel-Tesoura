@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png"> 
+  <link rel="stylesheet" href="estilo.css">
+  <title>Pedra Papel Tesoura</title> 
+</head>
+<body>
+
+  <header>
+    
+    <p id="nome-jogo">Pedra Papel Tesoura</p>
+    
+    <div>
+      <p id="potuacao">Partidas</p>
+      <p id="numero-potuacao">0</p>
+    </div>
+  </header>
+
+    <main>
+      <section>
+        <div class="img-ppt">
+            <img src="images/icon-papel.svg" alt="" class=" azul" onclick="jogo('papel')">
+        
+            <img src="images/icon-pedra.svg" alt="" class="vermelho" onclick="jogo('pedra')">
+        
+            <img src="images/icon-scissors.svg" alt="" class=" amarelo" onclick="jogo('tesoura')">
+        </div>
+        
+        
+        <div class="regras">
+          <div id="img-regras">
+            <p>Regras</p>
+            <img src="images/image-regras.svg" alt="">
+          </div>
+        
+          <p class="content">Regras</p>
+        </div>
+      </section>
+
+      <section id="resultado">
+        
+          <div id="jogador" >
+            <img id="imagemJogador" src="" alt="">
+            <p>Você</p>
+          </div>
+            
+          <div id="robo">
+            <img id="imagemRobo" src="" alt="">
+              <p>Robô</p>
+            </div>
+
+           <p id="ganhou">GANHOU</p> 
+          <button onclick="continuar()">continuar</button>
+      </section>
+  </main>
+</body>
+<script src="script.js"></script>
+</html>

@@ -1,0 +1,284 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(2, 2, 49);
+  
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    border: 3px solid #fff;
+    border-radius: 20px;
+    margin: 30px 50px;
+    padding: 20px 20px;
+}
+
+#nome-jogo{
+    color: #fff;
+    font-size: 30px;
+    max-width: 40px;
+    padding-left: 40px;
+}
+
+header div{
+    padding-right: 60px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 3px 5px 5px 5px rgba(0, 0, 0, 0.459);
+}
+ 
+#potuacao{
+    font-size: 18px;
+    display: block;
+    position: relative;
+    left: 30px;
+    top: 3px;
+    background-color: #fff;
+}
+
+#numero-potuacao{
+    font-size: 50px;
+    background-color: #fff;
+    display: block;
+    position: relative;
+    top: 20px;
+    left:60px;
+}
+
+.img-ppt{
+    display: flex;
+    justify-content: center;
+}
+
+.img-ppt img{
+    background-color: #fff;
+    width: 80px;
+    border-radius:100% ;
+    padding: 40px 40px;
+    margin: 0px 40px;
+}
+
+.img-ppt  .azul{
+    border: 25px solid blue;
+    border-radius: 100%;
+}
+
+.img-ppt  .amarelo{
+    border: 25px solid yellow;
+    border-radius: 100%;
+}
+
+.img-ppt  .vermelho{
+    border: 25px solid  red;
+    border-radius: 100%;
+   
+}
+
+.img-ppt img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.regras{
+    display: flex;
+    justify-content: flex-end;
+    height: 25vh;
+}
+
+.regras .content{
+    align-self: flex-end;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 10px 40px;
+    margin-right: 50px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.regras .content:hover{
+    transform:scale(1.1);
+}
+
+.regras #img-regras{
+    display: none;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 20px 30px;
+    position: absolute;
+    left: 40%;
+    top: 100px;
+}
+
+.regras #img-regras p{
+    background-color: #fff;
+    color: rgb(112, 111, 111);
+    font-size: 30px;
+    padding-bottom: 30px;
+}
+
+.regras img{
+    background-color: #fff;
+}
+
+
+#resultado{
+    display: none;
+    position: absolute;
+    top: 200px;
+    left: 20%;
+}
+
+
+#resultado #jogador, #robo{
+    background-color:  rgba(37, 0, 122, 0.459);
+    padding: 40px 40px;
+    margin: 0px 20px;
+    border-radius: 20px;
+}
+
+#resultado img{
+
+    background-color: #fff;
+    width: 80px;
+    border-radius:100% ;
+    padding: 40px 40px;
+    margin: 0px 40px;
+}
+
+#resultado #jogador > p, #robo > p{
+    text-align: center;
+    background-color:  rgba(37, 0, 122, 0.459);
+    margin-top:20px; 
+    font-size: 20px;
+    color: #fff;
+}
+
+#resultado > button{
+    position: absolute;
+    top: 330px;
+    left: 40%;
+    padding: 10px 40px;
+    color: #fff;
+    font-size: 25px;
+    background-color:rgba(37, 0, 122, 0.459); 
+    border:none ;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#resultado > button:hover{
+    transform: scale(1.1);
+}
+
+#ganhou{
+    background-color: transparent;
+    color: #fff;
+    position: absolute;
+    right: 300px;
+    top: 250px;
+    font-size: 30px;
+}
+
+@media (max-width: 734px){
+    .img-ppt img{
+        background-color: #fff;
+        width: 50px;
+        border-radius:100% ;
+        padding: 30px 30px;
+        margin: 0px 5px;
+    }
+
+    .img-ppt  .vermelho{
+        border: 25px solid  red;
+        border-radius: 100%;
+       position: absolute;
+       bottom:  120px;
+       left: 150px;
+    }
+    
+    .regras{
+        display: flex;
+        justify-content: flex-end;
+        height: 35vh;
+    }
+    
+    .regras .content{
+       
+        color: #fff;
+        border: 2px solid #fff;
+        padding: 10px 40px;
+        margin-right: 180px;
+        border-radius: 20px;
+        cursor: pointer;
+    }
+    
+    .regras #img-regras{
+        display: none;
+        background-color: #fff;
+        border-radius: 20px;
+        padding: 40px 30px;
+        position: absolute;
+        left: 15%;
+        top: 100px;
+    }
+
+    #resultado{
+        display: none;
+        position: absolute;
+        top: 200px; 
+        left: -1%;
+    }
+    
+    
+    #resultado #jogador, #robo{
+        background-color:  rgba(37, 0, 122, 0.459);
+        padding: 10px 5px;
+        margin: 0px 20px;
+        border-radius: 20px;
+    }
+    
+    #resultado img{
+        background-color: #fff;
+        width: 50px;
+        border-radius:100% ;
+        padding: 30px 30px;
+        margin: 0px 40px;
+    }
+    
+    #resultado #jogador > p, #robo > p{
+        text-align: center;
+        background-color:  rgba(37, 0, 122, 0.459);
+        margin-top:20px; 
+        font-size: 20px;
+        color: #fff;
+    }
+    
+    #resultado > button{
+        position: absolute;
+        top: 260px;
+        left: 33%;
+        padding: 10px 40px;
+        color: #fff;
+        font-size: 25px;
+        background-color:rgb(37, 0, 122); 
+        border:none ;
+        border-radius: 20px;
+        cursor: pointer;
+    }
+    
+    #resultado > button:hover{
+        transform: scale(1.1);
+    }
+
+    
+    #ganhou{
+        background-color: transparent;
+        color: #fff;
+        position: absolute;
+        right: 170px;
+        top: 5px;
+        font-size: 30px;
+}
+}
